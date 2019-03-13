@@ -9,5 +9,5 @@ public interface Vehicle {
 
     EnumUtility.Size getSize();
     String getLicencePlate();
-
+    void vacateSpot();
 }

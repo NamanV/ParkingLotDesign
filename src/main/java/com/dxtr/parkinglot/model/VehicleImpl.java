@@ -1,5 +1,6 @@
 package com.dxtr.parkinglot.model;
 
+import com.dxtr.parkinglot.model.interfaces.Spot;
 import com.dxtr.parkinglot.model.interfaces.Vehicle;
 import com.dxtr.parkinglot.utility.EnumUtility;
 
@@ -10,6 +11,7 @@ public class VehicleImpl implements Vehicle {
 
     private EnumUtility.Size size;
     private String licencePlate;
+    private Spot spot;
 
 
     @Override
@@ -20,5 +22,10 @@ public class VehicleImpl implements Vehicle {
     @Override
     public String getLicencePlate() {
         return this.licencePlate;
+    }
+
+    @Override
+    public void vacateSpot() {
+        spot.vacateSpot();
     }
 }
