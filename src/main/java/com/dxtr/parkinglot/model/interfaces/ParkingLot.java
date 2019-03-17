@@ -12,4 +12,6 @@ public interface ParkingLot {
     void parkVehicle(Vehicle vehicle) throws ParkingLotException;
 
     void vacateSpot() throws ParkingLotException;
+
+    int availableParkingSpot();
 }

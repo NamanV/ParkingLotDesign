@@ -1,5 +1,6 @@
 package com.dxtr.parkinglot.api.response;
 
+import com.fasterxml.jackson.annotation.JsonInclude;
 import lombok.Builder;
 import lombok.Setter;
 
@@ -9,6 +10,7 @@ import lombok.Setter;
 
 @Builder
 @Setter
+@JsonInclude(JsonInclude.Include.NON_NULL)
 public class ParkingResponse extends BaseResponse {
 
 }

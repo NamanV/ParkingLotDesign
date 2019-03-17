@@ -1,7 +1,6 @@
 package com.dxtr.parkinglot.api.response;
 
-import lombok.Builder;
-import lombok.Setter;
+import lombok.*;
 
 import java.io.Serializable;
 
@@ -9,11 +8,13 @@ import java.io.Serializable;
  * Created by Naman on 3/17/19.
  */
 
-@Builder
+@AllArgsConstructor
+@NoArgsConstructor
 @Setter
+@Getter
 public class BaseResponse implements Serializable {
 
-    private boolean success;
+    private boolean success = true;
     private String message;
     private Error error;
 

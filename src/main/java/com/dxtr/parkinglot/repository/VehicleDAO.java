@@ -2,8 +2,8 @@ package com.dxtr.parkinglot.repository;
 
 import com.dxtr.parkinglot.model.interfaces.Spot;
 import com.dxtr.parkinglot.model.interfaces.Vehicle;
-import com.dxtr.parkinglot.utility.EnumUtility;
 import com.dxtr.parkinglot.utility.ParkingLotException;
+import org.springframework.stereotype.Repository;
 
 import java.util.HashMap;
 import java.util.List;
@@ -12,6 +12,7 @@ import java.util.Map;
 /**
  * Created by Naman on 3/17/19.
  */
+@Repository
 public class VehicleDAO implements VehicleRepository {
 
 

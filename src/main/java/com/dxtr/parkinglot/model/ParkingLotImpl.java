@@ -1,13 +1,10 @@
 package com.dxtr.parkinglot.model;
 
-import com.dxtr.parkinglot.model.FloorImpl;
 import com.dxtr.parkinglot.model.interfaces.Floor;
 import com.dxtr.parkinglot.model.interfaces.ParkingLot;
 import com.dxtr.parkinglot.model.interfaces.Vehicle;
 import com.dxtr.parkinglot.utility.Configuration;
 import com.dxtr.parkinglot.utility.ParkingLotException;
-import org.springframework.context.annotation.Bean;
-import org.springframework.stereotype.Service;
 
 import java.util.ArrayList;
 import java.util.List;
