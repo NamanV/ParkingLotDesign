@@ -35,4 +35,10 @@ public class ParkingLotImpl implements ParkingLot {
     public void vacateSpot() throws ParkingLotException {
 
     }
+
+
+    @Override
+    public int availableParkingSpot() {
+        return -1;
+    }
 }
