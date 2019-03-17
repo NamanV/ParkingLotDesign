@@ -1,5 +1,6 @@
 package com.dxtr.parkinglot.application;
 
+import com.dxtr.parkinglot.model.ParkingLotImpl;
 import com.dxtr.parkinglot.model.VehicleImpl;
 import com.dxtr.parkinglot.model.interfaces.ParkingLot;
 import com.dxtr.parkinglot.model.interfaces.Vehicle;
