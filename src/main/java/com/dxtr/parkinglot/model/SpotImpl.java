@@ -12,8 +12,12 @@ public class SpotImpl implements Spot {
 
     private Vehicle vehicle;
     private int spotNumber;
-    private boolean empty;
+    private boolean empty = false;
 
+    @Override
+    public void initSpot() {
+
+    }
 
     @Override
     public void vacateSpot() {

@@ -4,10 +4,12 @@ import com.dxtr.parkinglot.model.interfaces.Spot;
 import com.dxtr.parkinglot.model.interfaces.Vehicle;
 import com.dxtr.parkinglot.utility.EnumUtility;
 import com.dxtr.parkinglot.utility.ParkingLotException;
+import lombok.Builder;
 
 /**
  * Created by Naman on 3/13/19.
  */
+@Builder
 public class VehicleImpl implements Vehicle {
 
     private EnumUtility.Size size;

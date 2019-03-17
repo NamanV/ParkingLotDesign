@@ -13,7 +13,7 @@ public class EnumUtility {
 
         int noOfSpotsRequired;
 
-        Size(int noOfSpotsRequired){
+        Size(int noOfSpotsRequired) {
             this.noOfSpotsRequired = noOfSpotsRequired;
         }
     }
