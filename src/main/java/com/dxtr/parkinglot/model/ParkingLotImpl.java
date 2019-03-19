@@ -21,7 +21,7 @@ public class ParkingLotImpl implements ParkingLot {
         this.floors = new ArrayList<>();
         for (int i = 0; i < Configuration.FLOORS_IN_A_LOT; i++) {
             Floor floor = new FloorImpl();
-            floor.initFloor();
+            floor.initFloor(i + 1);
             floors.add(floor);
         }
     }

@@ -12,14 +12,17 @@ import java.util.List;
  */
 public class FloorImpl implements Floor {
     private List<Row> rows;
+    private int floorNo;
 
     @Override
-    public void initFloor() {
+    public void initFloor(int floorNo) {
         rows = new ArrayList<>(Configuration.ROWS_IN_A_FLOOR);
+        this.floorNo = floorNo;
         for (int i = 0; i < Configuration.ROWS_IN_A_FLOOR; i++) {
             Row row = new RowImpl();
-            row.initRow();
+            row.initRow(i + 1);
             rows.add(row);
+            this.floorNo = floorNo;
         }
     }
 }
